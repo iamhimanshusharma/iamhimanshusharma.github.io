@@ -6,12 +6,12 @@ export function Hero() {
   const [isHovering, setIsHovering] = useState(false);
 
   const skillIcons = [
-    { icon: Code, color: '#10b981', angle: 330, distance: 120 },
-    { icon: Database, color: '#3b82f6', angle: 0, distance: 120 },
-    { icon: Layers, color: '#8b5cf6', angle: 30, distance: 120 },
-    { icon: Cpu, color: '#f59e0b', angle: 210, distance: 120 },
-    { icon: Terminal, color: '#ef4444', angle: 180, distance: 120 },
-    { icon: GitBranch, color: '#ec4899', angle: 150, distance: 120 },
+    { icon: Code, color: '#10b981', angle: 335, distance: 170 },
+    { icon: Database, color: '#3b82f6', angle: 0, distance: 180 },
+    { icon: Layers, color: '#8b5cf6', angle: 25, distance: 170 },
+    { icon: Cpu, color: '#f59e0b', angle: 205, distance: 170 },
+    { icon: Terminal, color: '#ef4444', angle: 180, distance: 180 },
+    { icon: GitBranch, color: '#ec4899', angle: 155, distance: 170 },
   ];
 
   return (
