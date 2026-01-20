@@ -5,27 +5,22 @@ export function Skills() {
     {
       category: 'Programming Languages',
       color: 'from-emerald-500 to-teal-500',
-      skills: ['Python', 'Java', 'C++', 'JavaScript', 'TypeScript', 'SQL', 'C', 'Go'],
+      skills: ['C++', 'C', 'Java', 'TypeScript', 'JavaScript', 'SQL', 'Python'],
     },
     {
       category: 'Web Development',
       color: 'from-blue-500 to-cyan-500',
-      skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'HTML/CSS', 'Tailwind CSS', 'REST API', 'GraphQL'],
+      skills: ['React.js', 'Node.js', 'Express.js', 'Next.js', 'HTML/CSS', 'Tailwind CSS', 'REST API'],
     },
     {
       category: 'Databases',
       color: 'from-violet-500 to-purple-500',
-      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase'],
+      skills: ['MongoDB', 'PostgreSQL', 'MySQL'],
     },
     {
       category: 'Tools & Technologies',
       color: 'from-orange-500 to-red-500',
-      skills: ['Git & GitHub', 'Docker', 'AWS', 'Linux', 'VS Code', 'Postman', 'Figma'],
-    },
-    {
-      category: 'Frameworks & Libraries',
-      color: 'from-pink-500 to-rose-500',
-      skills: ['TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Scikit-learn', 'OpenCV'],
+      skills: ['Git & GitHub', 'Docker', 'Linux', 'VS Code', 'Postman', 'Figma'],
     },
   ];
 

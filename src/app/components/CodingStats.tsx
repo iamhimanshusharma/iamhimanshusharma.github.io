@@ -5,39 +5,27 @@ export function CodingStats() {
   const platforms = [
     {
       name: 'LeetCode',
-      username: '@johndoe',
+      username: '@imyselfhimanshusharma',
       color: 'from-orange-500 to-yellow-500',
       stats: [
-        { label: 'Problems Solved', value: '850+', icon: Code2 },
-        { label: 'Contest Rating', value: '2145', icon: Trophy },
-        { label: 'Global Rank', value: 'Top 5%', icon: TrendingUp },
-        { label: 'Max Streak', value: '120 days', icon: Target },
+        { label: 'Problems Solved', value: '225+', icon: Code2 },
+        { label: 'Contest Rating', value: 'NA', icon: Trophy },
+        { label: 'Global Rank', value: '636,076', icon: TrendingUp },
+        { label: 'Max Streak', value: '2 days', icon: Target },
       ],
-      badges: ['Knight', 'Guardian', '100 Days Badge'],
+      badges: ['50 Days Badge 2025'],
     },
     {
       name: 'CodeForces',
-      username: '@johndoe_cf',
+      username: '@himanshush',
       color: 'from-blue-500 to-indigo-500',
       stats: [
-        { label: 'Current Rating', value: '1850', icon: Star },
-        { label: 'Max Rating', value: '1920', icon: Trophy },
-        { label: 'Contests', value: '85', icon: Target },
-        { label: 'Rank', value: 'Candidate Master', icon: Award },
+        { label: 'Current Rating', value: '801', icon: Star },
+        { label: 'Max Rating', value: '809', icon: Trophy },
+        { label: 'Contests', value: '5', icon: Target },
+        { label: 'Rank', value: 'Newbie', icon: Award },
       ],
-      badges: ['Specialist', 'Expert', 'Candidate Master'],
-    },
-    {
-      name: 'CodeChef',
-      username: '@johndoe123',
-      color: 'from-amber-600 to-orange-600',
-      stats: [
-        { label: 'Current Rating', value: '2050', icon: Star },
-        { label: 'Highest Rating', value: '2180', icon: Trophy },
-        { label: 'Global Rank', value: '4★', icon: Award },
-        { label: 'Problems Solved', value: '450+', icon: Code2 },
-      ],
-      badges: ['4 Star', 'Division 2', 'Problem Setter'],
+      badges: ['Newbie'],
     },
   ];
 
@@ -187,9 +175,9 @@ export function CodingStats() {
           className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6"
         >
           {[
-            { label: 'Total Problems', value: '1300+', icon: Code2, color: 'from-emerald-500 to-teal-500' },
-            { label: 'Contests Participated', value: '150+', icon: Trophy, color: 'from-violet-500 to-purple-500' },
-            { label: 'Achievements', value: '25+', icon: Award, color: 'from-orange-500 to-red-500' },
+            { label: 'Total Problems', value: '350+', icon: Code2, color: 'from-emerald-500 to-teal-500' },
+            // { label: 'Contests Participated', value: '5+', icon: Trophy, color: 'from-violet-500 to-purple-500' },
+            // { label: 'Achievements', value: '25+', icon: Award, color: 'from-orange-500 to-red-500' },
           ].map((item, index) => {
             const Icon = item.icon;
             return (

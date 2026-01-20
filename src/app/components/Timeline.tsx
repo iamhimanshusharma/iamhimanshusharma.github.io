@@ -6,53 +6,46 @@ export function Timeline() {
     {
       type: 'education',
       title: 'M.Tech in Computer Science & Engineering',
-      institution: 'Indian Institute of Technology',
-      location: 'New Delhi, India',
+      institution: 'Indian Institute of Technology, Bhilai',
+      location: 'Chhattisgarh, India',
       period: '2024 - 2026',
-      description: 'Specializing in Artificial Intelligence and Machine Learning with focus on Deep Learning and NLP.',
+      description: 'CGPA: 8.62/10',
       achievements: [
-        'CGPA: 9.2/10',
-        'Research Assistant in AI Lab',
-        'Published 2 research papers',
+        'Teaching Assistant- Advanced Data Structures and Algorithms | Course Instructor: Dr. Vinod Reddy',
+        'Core Member in Blockchain at IIT Bhilai (Blockchain Society)'
       ],
     },
     {
+      type: 'education',
+      title: 'Graduate Aptitude Test in Engineering (GATE)',
+      institution: 'Computer Science',
+      location: "India",
+      period: '2024',
+      description: 'Qualified🥳',
+    },
+    {
       type: 'work',
-      title: 'Software Engineering Intern',
-      institution: 'Tech Corp Inc.',
-      location: 'Bangalore, India',
-      period: 'Summer 2023',
-      description: 'Developed full-stack web applications and contributed to microservices architecture.',
+      title: 'Junior Programmer',
+      institution: 'Digiardent Technologies Pvt. Ltd.',
+      location: 'Noida, India',
+      period: 'Sep 2021 - Dec 2022',
       achievements: [
-        'Built 3 production-ready features',
-        'Improved API response time by 40%',
-        'Mentored 2 junior interns',
+        'Developed and maintained RESTful APIs using ExpressJS, NodeJS, MongoDB and JavaScript.',
+        'Managed PostgreSQL databases, optimized queries, and ensured reliable data flow across client applications.',
+        'Conducted application and API testing to improve product stability and reduce deployment issues.',
+        'Collaborated with 4+ cross-functional teams to integrate backend services with frontend modules.'
       ],
     },
     {
       type: 'education',
       title: 'B.Tech in Computer Science',
-      institution: 'XYZ University',
-      location: 'Mumbai, India',
-      period: '2020 - 2024',
-      description: 'Comprehensive study of computer science fundamentals with hands-on project experience.',
+      institution: 'Naraina Vidya Peeth Engineering and Management Institute, Kanpur',
+      location: 'Uttar Pradesh, India',
+      period: '2017 - 2021',
+      description: 'CGPA: 8.48/10',
       achievements: [
-        'CGPA: 8.5/10',
-        'President of Coding Club',
-        'Winner of 3 hackathons',
-      ],
-    },
-    {
-      type: 'work',
-      title: 'Web Developer',
-      institution: 'Freelance',
-      location: 'Remote',
-      period: '2022 - 2023',
-      description: 'Created custom websites and web applications for various clients.',
-      achievements: [
-        'Completed 15+ projects',
-        '5-star rating on Upwork',
-        'Built e-commerce platforms',
+        'Academic Excellence Award',
+        'State Government Scholarship Recipient'
       ],
     },
   ];
@@ -106,8 +99,8 @@ export function Timeline() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       className={`h-2 ${item.type === 'education'
-                          ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
-                          : 'bg-gradient-to-r from-violet-500 to-fuchsia-500'
+                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
+                        : 'bg-gradient-to-r from-violet-500 to-fuchsia-500'
                         }`}
                     />
 
@@ -118,14 +111,14 @@ export function Timeline() {
                           whileHover={{ rotate: 360, scale: 1.1 }}
                           transition={{ duration: 0.5 }}
                           className={`p-3 rounded-xl flex-shrink-0 ${item.type === 'education'
-                              ? 'bg-gradient-to-br from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30'
-                              : 'bg-gradient-to-br from-violet-100 to-fuchsia-100 dark:from-violet-900/30 dark:to-fuchsia-900/30'
+                            ? 'bg-gradient-to-br from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30'
+                            : 'bg-gradient-to-br from-violet-100 to-fuchsia-100 dark:from-violet-900/30 dark:to-fuchsia-900/30'
                             }`}
                         >
                           <Icon
                             className={`w-6 h-6 ${item.type === 'education'
-                                ? 'text-emerald-600 dark:text-emerald-400'
-                                : 'text-violet-600 dark:text-violet-400'
+                              ? 'text-emerald-600 dark:text-emerald-400'
+                              : 'text-violet-600 dark:text-violet-400'
                               }`}
                           />
                         </motion.div>
@@ -147,8 +140,8 @@ export function Timeline() {
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
                             className={`text-base sm:text-lg mb-3 ${item.type === 'education'
-                                ? 'text-emerald-600 dark:text-emerald-400'
-                                : 'text-violet-600 dark:text-violet-400'
+                              ? 'text-emerald-600 dark:text-emerald-400'
+                              : 'text-violet-600 dark:text-violet-400'
                               }`}
                           >
                             {item.institution}
@@ -209,8 +202,8 @@ export function Timeline() {
                                   <motion.div
                                     whileHover={{ scale: 1.5 }}
                                     className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${item.type === 'education'
-                                        ? 'bg-emerald-500'
-                                        : 'bg-violet-500'
+                                      ? 'bg-emerald-500'
+                                      : 'bg-violet-500'
                                       }`}
                                   />
                                   <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
@@ -230,8 +223,8 @@ export function Timeline() {
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       className={`absolute top-0 ${isLeft ? 'right-0' : 'left-0'} w-20 h-20 ${item.type === 'education'
-                          ? 'bg-gradient-to-br from-emerald-500/10 to-teal-500/10'
-                          : 'bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10'
+                        ? 'bg-gradient-to-br from-emerald-500/10 to-teal-500/10'
+                        : 'bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10'
                         } ${isLeft ? 'rounded-bl-full' : 'rounded-br-full'}`}
                     />
                   </motion.div>
@@ -248,8 +241,8 @@ export function Timeline() {
                       whileHover={{ scale: 1.3, rotate: 360 }}
                       transition={{ duration: 0.5 }}
                       className={`w-16 h-16 rounded-full border-4 border-white dark:border-gray-900 flex items-center justify-center shadow-xl ${item.type === 'education'
-                          ? 'bg-gradient-to-br from-emerald-500 to-teal-500'
-                          : 'bg-gradient-to-br from-violet-500 to-fuchsia-500'
+                        ? 'bg-gradient-to-br from-emerald-500 to-teal-500'
+                        : 'bg-gradient-to-br from-violet-500 to-fuchsia-500'
                         }`}
                     >
                       <Icon className="w-7 h-7 text-white" />
@@ -263,8 +256,8 @@ export function Timeline() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
                     className={`hidden lg:block absolute top-1/2 w-16 h-1 ${item.type === 'education'
-                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
-                        : 'bg-gradient-to-r from-violet-500 to-fuchsia-500'
+                      ? 'bg-gradient-to-r from-emerald-500 to-teal-500'
+                      : 'bg-gradient-to-r from-violet-500 to-fuchsia-500'
                       } ${isLeft ? 'right-1/2 mr-8' : 'left-1/2 ml-8'} ${isLeft ? 'origin-right' : 'origin-left'}`}
                   />
                 </div>
@@ -284,8 +277,8 @@ export function Timeline() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
                       className={`w-full h-full origin-top ${index % 2 === 0
-                          ? 'bg-gradient-to-b from-emerald-500 to-violet-500'
-                          : 'bg-gradient-to-b from-violet-500 to-emerald-500'
+                        ? 'bg-gradient-to-b from-emerald-500 to-violet-500'
+                        : 'bg-gradient-to-b from-violet-500 to-emerald-500'
                         }`}
                     />
 
@@ -300,8 +293,8 @@ export function Timeline() {
                         ease: "easeInOut",
                       }}
                       className={`absolute left-1/2 top-0 w-3 h-3 rounded-full transform -translate-x-1/2 ${index % 2 === 0
-                          ? 'bg-emerald-400 shadow-lg shadow-emerald-500/50'
-                          : 'bg-violet-400 shadow-lg shadow-violet-500/50'
+                        ? 'bg-emerald-400 shadow-lg shadow-emerald-500/50'
+                        : 'bg-violet-400 shadow-lg shadow-violet-500/50'
                         }`}
                     />
                   </motion.div>
