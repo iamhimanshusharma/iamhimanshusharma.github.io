@@ -105,7 +105,7 @@ export function Hero() {
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-0 rounded-full border-4 border-dashed border-emerald-300/30"
                 />
-                <img src="user.jpg" alt="" className='rounded-full overflow-hidden' />
+                <img src="/user.jpg" alt="" className='rounded-full overflow-hidden' />
               </motion.div>
             </div>
           </motion.div>
