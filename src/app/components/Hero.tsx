@@ -172,10 +172,11 @@ export function Hero() {
               Get in Touch
             </motion.a>
             <motion.a
-              href="#"
+              href="/himanshu_sharma_resume.pdf"
               whileHover={{ scale: 1.05, borderColor: "#10b981" }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 border-2 border-emerald-600 text-emerald-600 dark:text-emerald-400 rounded-lg hover:bg-emerald-600 hover:text-white transition-all inline-flex items-center gap-2"
+              download={true}
             >
               <Download className="w-5 h-5" />
               Download CV
@@ -213,23 +214,6 @@ export function Hero() {
                 </motion.a>
               );
             })}
-          </motion.div>
-
-          {/* Scroll indicator */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.5 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          >
-            <motion.a
-              href="#about"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="text-gray-400 hover:text-emerald-600 transition-colors"
-            >
-              <ChevronDown className="w-8 h-8" />
-            </motion.a>
           </motion.div>
         </div>
       </div>
