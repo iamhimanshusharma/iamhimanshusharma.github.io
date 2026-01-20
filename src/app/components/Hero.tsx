@@ -6,12 +6,12 @@ export function Hero() {
   const [isHovering, setIsHovering] = useState(false);
 
   const skillIcons = [
-    { icon: Code, color: '#10b981', angle: 0, distance: 120 },
-    { icon: Database, color: '#3b82f6', angle: 60, distance: 120 },
-    { icon: Layers, color: '#8b5cf6', angle: 120, distance: 120 },
-    { icon: Cpu, color: '#f59e0b', angle: 180, distance: 120 },
-    { icon: Terminal, color: '#ef4444', angle: 240, distance: 120 },
-    { icon: GitBranch, color: '#ec4899', angle: 300, distance: 120 },
+    { icon: Code, color: '#10b981', angle: 330, distance: 120 },
+    { icon: Database, color: '#3b82f6', angle: 0, distance: 120 },
+    { icon: Layers, color: '#8b5cf6', angle: 30, distance: 120 },
+    { icon: Cpu, color: '#f59e0b', angle: 210, distance: 120 },
+    { icon: Terminal, color: '#ef4444', angle: 180, distance: 120 },
+    { icon: GitBranch, color: '#ec4899', angle: 150, distance: 120 },
   ];
 
   return (
@@ -44,14 +44,12 @@ export function Hero() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto w-full relative z-10 mt-10">
+      <div className="max-w-7xl mx-auto w-full relative z-10 mt-5">
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            onHoverStart={() => setIsHovering(true)}
-            onHoverEnd={() => setIsHovering(true)}
             className="mb-8 inline-block relative"
           >
             {/* Skill icons that spread on hover */}
@@ -66,20 +64,21 @@ export function Hero() {
                   <motion.div
                     key={index}
                     className="absolute top-1/2 left-1/2"
-                    initial={{ x: -16, y: -16, opacity: 0 }}
+                    initial={{ x: -16, y: -16, opacity: 0, scale: 0.3 }}
                     animate={{
-                      x: isHovering ? x - 16 : -16,
-                      y: isHovering ? y - 16 : -16,
-                      opacity: isHovering ? 0.6 : 0,
-                      scale: isHovering ? 1 : 0.5,
+                      x: x - 16,
+                      y: y - 16,
+                      opacity: 0.8,
+                      scale: 1,
                     }}
                     transition={{
                       type: "spring",
                       stiffness: 200,
                       damping: 20,
-                      delay: index * 0.05,
+                      delay: index * 0.15, // stagger effect
                     }}
                   >
+
                     <div
                       className="w-12 h-12 rounded-lg backdrop-blur-md bg-white/20 dark:bg-gray-800/30 border border-white/30 dark:border-gray-700/30 flex items-center justify-center shadow-xl"
                       style={{
@@ -105,7 +104,12 @@ export function Hero() {
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-0 rounded-full border-4 border-dashed border-emerald-300/30"
                 />
-                <img src="/user.jpg" alt="" className='rounded-full overflow-hidden' />
+                <img
+                  src="/user.jpg"
+                  alt="Himanshu"
+                  className="w-full h-full object-cover rounded-full"
+                />
+
               </motion.div>
             </div>
           </motion.div>
@@ -114,7 +118,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 text-gray-900 dark:text-white mt-10"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 text-gray-900 dark:text-white"
           >
             <motion.span
               className="inline-block"
@@ -153,7 +157,7 @@ export function Hero() {
             transition={{ delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
           >
-            Passionate about building innovative solutions and exploring cutting-edge technologies in AI, Machine Learning, and Software Development.
+            Passionate about building innovative solutions and exploring cutting-edge technologies in Software Development.
           </motion.p>
 
           <motion.div

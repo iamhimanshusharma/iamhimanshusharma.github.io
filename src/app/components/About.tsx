@@ -10,8 +10,8 @@ export function About() {
     },
     {
       icon: Brain,
-      title: 'AI & Machine Learning',
-      description: 'Deep understanding of ML algorithms, neural networks, and their practical applications.',
+      title: 'API Development',
+      description: 'Deep understanding of REST API fundamentals and their practical applications.',
     },
     {
       icon: Rocket,
@@ -21,7 +21,7 @@ export function About() {
     {
       icon: Award,
       title: 'Research & Innovation',
-      description: 'Committed to academic research and contributing to technological advancement.',
+      description: 'Committed to academic research and contributing to technological advancement in Graphs.',
     },
   ];
 
@@ -80,8 +80,8 @@ export function About() {
               <motion.div
                 key={item.title}
                 variants={itemVariants}
-                whileHover={{ 
-                  scale: 1.05, 
+                whileHover={{
+                  scale: 1.05,
                   y: -10,
                   boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)",
                 }}
@@ -90,7 +90,7 @@ export function About() {
               >
                 <div className="flex items-start gap-4">
                   <motion.div
-                    whileHover={{ 
+                    whileHover={{
                       rotate: 360,
                       scale: 1.1,
                     }}
@@ -148,8 +148,8 @@ export function About() {
             transition={{ delay: 0.1 }}
             className="text-lg opacity-90 relative z-10"
           >
-            Currently pursuing advanced research in Deep Learning and Natural Language Processing, 
-            while also contributing to open-source projects and exploring cloud computing technologies. 
+            Currently pursuing research in coloring of Advance Graphs,
+            while also exploring cloud backend system technologies.
             I believe in continuous learning and staying updated with the latest trends in technology.
           </motion.p>
         </motion.div>

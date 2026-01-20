@@ -9,7 +9,7 @@ export function Projects() {
       technologies: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Docker'],
       github: 'https://github.com/iamhimanshusharma/contestapp',
       // demo: 'https://example.com',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop',
+      image: '/contest_app.png',
     },
     {
       title: 'Personal Finance Manager',
@@ -17,7 +17,7 @@ export function Projects() {
       technologies: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Chart.js'],
       github: 'https://github.com/iamhimanshusharma/personal-finance-webapp',
       // demo: 'https://example.com',
-      image: 'https://images.unsplash.com/photo-1508175911810-88c68a5cf5e5?w=600&h=400&fit=crop',
+      image: '/finance_app.png',
     },
     {
       title: 'Music Artist Collaboration Network Analysis',
@@ -25,7 +25,7 @@ export function Projects() {
       technologies: ['Python', 'NetworkX', 'Pandas'],
       github: 'https://colab.research.google.com/drive/1vDo2xgEqSZ3br8Vv2hxOyokPPkjOtfeo?usp=sharing',
       // demo: 'https://example.com',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop',
+      image: '/music_artist.png',
     }
   ];
 
@@ -65,7 +65,7 @@ export function Projects() {
                 <motion.img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover bg-white"
                   whileHover={{ scale: 1.15 }}
                   transition={{ duration: 0.4 }}
                 />
@@ -158,7 +158,7 @@ export function Projects() {
                     <Github className="w-4 h-4" />
                     <span className="text-sm">Code</span>
                   </motion.a>
-                  <motion.a
+                  {/* <motion.a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -167,7 +167,7 @@ export function Projects() {
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span className="text-sm">Demo</span>
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </div>
             </motion.div>
